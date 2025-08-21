@@ -40,4 +40,4 @@ jobs:
       - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: my-app/${{ steps.paths.outputs.dir }}
+          publish_dir: my-app/build
