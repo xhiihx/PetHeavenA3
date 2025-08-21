@@ -1,0 +1,175 @@
+/* Contact page — namespaced to avoid collisions */
+.ph-contact {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 24px;
+    align-items: start;
+    scroll-margin-top: var(--nav-h, 64px);
+}
+
+.ph-contact.text-left .ph-contact__copy {
+    order: 0;
+}
+
+.ph-contact.text-left .ph-contact__form {
+    order: 1;
+}
+
+.ph-contact.text-right .ph-contact__copy {
+    order: 1;
+}
+
+.ph-contact.text-right .ph-contact__form {
+    order: 0;
+}
+
+.ph-contact__copy {
+    align-self: center;
+    max-width: 58ch;
+}
+
+.ph-contact__copy h1 {
+    font-size: clamp(3.6rem, 5.2vw + 1.5rem, 4.6rem);
+    line-height: 1.15;
+}
+
+.ph-contact__copy p {
+    font-size: 2.125rem;
+    line-height: 1.8;
+}
+
+.ph-eyebrow {
+    margin: 0 0 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    opacity: .7;
+}
+
+.ph-contact__highlights {
+    margin: 1rem 0 0;
+    padding-left: 1.2rem;
+    font-size: 1.5rem;
+    line-height: 1.7;
+}
+
+.ph-contact__form {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, .06);
+    padding: 24px;
+}
+
+.ph-field {
+    margin-bottom: 16px;
+}
+
+.ph-field label {
+    display: block;
+    font-size: 1.70rem;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.ph-field input,
+.ph-field select,
+.ph-field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    outline: none;
+    background: #fff;
+}
+
+.ph-field input:focus,
+.ph-field select:focus,
+.ph-field textarea:focus {
+    border-color: #2f6fed;
+    box-shadow: 0 0 0 3px rgba(47, 111, 237, .12);
+}
+
+.ph-btn {
+    display: inline-block;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.55rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: #2f6fed;
+    color: #fff;
+}
+
+.ph-btn:hover {
+    filter: brightness(0.95);
+}
+
+.ph-contact.theme-blue {
+    position: relative;
+    padding-block: 48px;
+}
+
+.ph-contact.theme-blue::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    width: 100vw;
+    margin-left: -50vw;
+    z-index: -1;
+    background: linear-gradient(180deg, #f7faff 0%, #ffffff 100%);
+}
+
+.ph-contact.theme-blue .ph-contact__form {
+    box-shadow: 0 10px 34px rgba(47, 111, 237, .14);
+}
+
+.ph-contact.theme-photo {
+    position: relative;
+    padding-block: 56px;
+}
+
+.ph-contact.theme-photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    width: 100vw;
+    margin-left: -50vw;
+    z-index: -2;
+    background: url("../assets/aboutus_hero.jpg") center/cover no-repeat fixed;
+}
+
+.ph-contact.theme-photo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    width: 100vw;
+    margin-left: -50vw;
+    z-index: -1;
+    background: rgba(255, 255, 255, 0.7);
+    /* soft white veil for readability */
+    /* for a blue tint instead: background: rgba(47,111,237,.08); */
+}
+
+.ph-contact.theme-photo .ph-contact__form {
+    background: #fff;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, .12);
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    .ph-contact {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: left;
+    }
+}
