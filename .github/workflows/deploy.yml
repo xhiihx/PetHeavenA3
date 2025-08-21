@@ -1,0 +1,43 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: my-app  # your React app is in /my-app
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      # Install deps (works with or without package-lock.json)
+      - run: if [ -f package-lock.json ]; then npm ci; else npm i; fi
+
+      - run: npm run build
+
+      # SPA fallback so deep links don't 404
+      - name: Add 404 fallback
+        run: |
+          if [ -d dist ]; then cp dist/index.html dist/404.html; fi
+          if [ -d build ]; then cp build/index.html build/404.html; fi
+
+      # Choose publish dir automatically (Vite=dist, CRA=build)
+      - id: paths
+        run: |
+          if [ -d dist ]; then echo "dir=dist" >> $GITHUB_OUTPUT; else echo "dir=build" >> $GITHUB_OUTPUT; fi
+
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: my-app/build
