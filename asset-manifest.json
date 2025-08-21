@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/PetHeavenA3/static/css/main.c9276c42.css",
+    "main.js": "/PetHeavenA3/static/js/main.b2354b21.js",
+    "static/js/453.96453769.chunk.js": "/PetHeavenA3/static/js/453.96453769.chunk.js",
+    "static/media/dog_husky.jpg": "/PetHeavenA3/static/media/dog_husky.19fc1172acd3100de09f.jpg",
+    "static/media/dog_maltipooch.jpg": "/PetHeavenA3/static/media/dog_maltipooch.b1c2787c77da132e91b8.jpg",
+    "static/media/dog_boxer.jpg": "/PetHeavenA3/static/media/dog_boxer.b59ddbb5a9baa194d78b.jpg",
+    "static/media/aboutus_hero.jpg": "/PetHeavenA3/static/media/aboutus_hero.bcab56faf61448e409bd.jpg",
+    "static/media/dog_corgi.jpg": "/PetHeavenA3/static/media/dog_corgi.9434f09d65bf211b0968.jpg",
+    "static/media/dog_frenchbulldog.jpg": "/PetHeavenA3/static/media/dog_frenchbulldog.5fc357d5eec49445b5aa.jpg",
+    "static/media/dog_Staffordshire_Terrier.jpg": "/PetHeavenA3/static/media/dog_Staffordshire_Terrier.2f5cad0acc4733a72afd.jpg",
+    "static/media/dog_husky2.jpg": "/PetHeavenA3/static/media/dog_husky2.9c497bd5b3ced5add783.jpg",
+    "static/media/dog_shiba.jpg": "/PetHeavenA3/static/media/dog_shiba.4e64cb65c6e0c3ce53fc.jpg",
+    "static/media/cat_britishshorthair.jpeg": "/PetHeavenA3/static/media/cat_britishshorthair.f95d0b8eb2b0fab73f11.jpeg",
+    "static/media/cat_dog_hero.jpg": "/PetHeavenA3/static/media/cat_dog_hero.727fbb59137988f05f3c.jpg",
+    "static/media/cat_dog_hero2.jpg": "/PetHeavenA3/static/media/cat_dog_hero2.bcf280197f662577aea4.jpg",
+    "static/media/cat_maincoon.jpeg": "/PetHeavenA3/static/media/cat_maincoon.2a85f48fe15d2f532534.jpeg",
+    "static/media/cat_tabby.jpeg": "/PetHeavenA3/static/media/cat_tabby.e725617578a1f6145600.jpeg",
+    "static/media/cat_mainecoon2.jpeg": "/PetHeavenA3/static/media/cat_mainecoon2.d6a0eb4e223c826c4f2f.jpeg",
+    "static/media/cat_dog_hero3.webp": "/PetHeavenA3/static/media/cat_dog_hero3.15af117b957e50d352fa.webp",
+    "static/media/cat_ragdoll.avif": "/PetHeavenA3/static/media/cat_ragdoll.c22b921fe922533cdff3.avif",
+    "static/media/cat_ragdoll2.avif": "/PetHeavenA3/static/media/cat_ragdoll2.9d823efec13bdbc53053.avif",
+    "static/media/cat_tabby2.avif": "/PetHeavenA3/static/media/cat_tabby2.100bb6326b8bd8f81e60.avif",
+    "static/media/cat_siamese.jpeg": "/PetHeavenA3/static/media/cat_siamese.7822c7c3549fc9cc2fad.jpeg",
+    "index.html": "/PetHeavenA3/index.html",
+    "main.c9276c42.css.map": "/PetHeavenA3/static/css/main.c9276c42.css.map",
+    "main.b2354b21.js.map": "/PetHeavenA3/static/js/main.b2354b21.js.map",
+    "453.96453769.chunk.js.map": "/PetHeavenA3/static/js/453.96453769.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9276c42.css",
+    "static/js/main.b2354b21.js"
+  ]
+}
