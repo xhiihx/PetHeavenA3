@@ -93,9 +93,13 @@ export default function Blogs() {
 
                         <p className="ph-card__desc">{desc}</p>
 
-                        <a href="#" className="ph-card__cta" onClick={clickStub}>
+                        <button
+                            type="button"
+                            className="ph-card__cta ph-card__cta--linklike"
+                            onClick={clickStub}
+                        >
                             LEARN MORE &raquo;
-                        </a>
+                        </button>
                     </article>
                 ))}
             </div>
